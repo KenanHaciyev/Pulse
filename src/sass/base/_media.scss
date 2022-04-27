@@ -1,0 +1,129 @@
+@media (max-width:991px){
+    .promo{
+        header{
+            justify-content: space-around;
+            .header__contacts{
+                .header__phone{
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .promo__wrapper{
+            padding-right: 10px;
+        }
+    }
+}
+
+@media (max-width:767px){
+    .promo{
+        header{
+            .header__logo{
+                img{
+                    width: 75%;
+                }
+            }
+
+            .header__official{
+                margin-right: 20px;
+                span{
+                    font-size: 14px;
+                }
+            }
+
+            .header__contacts{
+                .header__phone{
+                    font-size: 13px;
+                }
+                button{
+                    height: 28px;
+                    width: 123px;
+                    font-size: 11px;
+                }
+            }
+        }
+        .promo__header{
+            font-size: 33px;
+        }
+        .promo__subheader{
+            font-size: 19px;
+        }
+        
+        .button_main{
+            width: 220px;
+            height: 40px;
+            font-size: 14px;
+        }
+
+        .promo__icons{
+            width: 324px;
+            .promo__icon{
+                font-size: 13px;
+            }
+        }
+    }
+
+    .benefits{
+        .benefits__icon{
+            width: 168px;
+            font-size: 13px;
+        }
+    }
+}
+
+@media (max-width:576px){
+    .promo{
+        header{
+            flex-direction: column;
+            justify-content: center;
+            .header__logo{
+               img{
+                   width: 100%;
+               }
+            }
+
+            .header__official{
+                margin-top: 15px;
+                margin-right: 0;
+                line-height: 15px;
+            }
+
+            .header__contacts{
+                margin-top: 15px;
+            }
+        }
+
+        .promo__wrapper{
+            padding-right: 0;
+            margin-top: 50px;
+            .promo__header{
+                text-align: center;
+                font-size: 30px;
+            }
+            .promo__subheader{
+                text-align: center;
+            }
+            .button_main{
+                margin-top: 45px;
+            }
+            align-items:center;
+        }
+    }
+    .benefits{
+        padding: 50px 0;
+        .benefits__icons{
+            flex-direction: column;
+            align-items: center;
+            margin-top: 45px;
+            .benefits__icon{
+                width: 93%;
+                font-size: 14px;
+                .benefits__title{
+                    margin: 25px 0;
+                    font-size: 19px;
+                }
+            }
+        }
+    }
+    
+}
