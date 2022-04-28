@@ -1,4 +1,12 @@
-@media (max-width:991px){
+@media (max-width:1200px){
+    .consultation{
+        .title_left{
+            font-size: 31px;
+        }
+    }
+}
+
+@media (max-width:991.5px){
     .promo{
         header{
             justify-content: space-around;
@@ -11,6 +19,24 @@
 
         .promo__wrapper{
             padding-right: 10px;
+        }
+    }
+
+    .consultation{
+        padding-left: 50px;
+        .title_left{
+            font-size: 27px;
+        }
+        &__descr{
+            font-size: 18px;
+        }
+        .feed-form{
+            input{
+                width: 80%;
+            }
+        }
+        .button_submit{
+            width: 80%;
         }
     }
 }
@@ -69,6 +95,12 @@
             font-size: 13px;
         }
     }
+
+    .consultation{
+        .title_left{
+            font-size: 24px;
+        }
+    }
 }
 
 @media (max-width:576px){
@@ -94,8 +126,13 @@
         }
 
         .promo__wrapper{
-            padding-right: 0;
+            padding-right: 5px;
+            padding-left: 5px;
             margin-top: 50px;
+            align-items:center;
+            .promo__icons{
+                width: 303px;
+            }
             .promo__header{
                 text-align: center;
                 font-size: 30px;
@@ -106,7 +143,6 @@
             .button_main{
                 margin-top: 45px;
             }
-            align-items:center;
         }
     }
     .benefits{
@@ -126,4 +162,32 @@
         }
     }
     
+    .consultation{
+        padding-left: 2px;
+        padding-right: 2px;
+        min-height: 625px;
+        .title_left{
+            margin-bottom: 18px;
+            font-size: 21px;
+            text-align: center;
+        }
+        &__descr{
+            line-height: 22px;
+            font-size: 14px;
+            text-align: center;
+        }
+        .feed-form{   
+            justify-content: center;
+            align-items: center;
+            input{
+                width: 63%;
+                height: 44px;
+            }
+        }
+        .button_submit{
+            width: 70%;
+            height: 44px;
+            font-size: 13px;
+        }
+    }
 }
