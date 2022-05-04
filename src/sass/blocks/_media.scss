@@ -6,7 +6,7 @@
     }
 }
 
-@media (max-width:991.5px){
+@media (max-width:992.5px){
     .promo{
         header{
             justify-content: space-around;
@@ -39,9 +39,42 @@
             width: 80%;
         }
     }
+
+    .carousel{
+        .slick-prev{
+            left: -40px;
+        }
+
+        .slick-next{
+            right: -40px;
+
+        }
+        
+        &__inner{
+            width: 600px;
+        }
+    }
+
+    .reviews{
+        &__wrapper{
+            img{
+                width: 130px;
+                height: 130px;
+            }
+            &_descr{
+                width: 570px;
+                .text{
+                    font-size: 13px;
+                }
+                .gratitude{
+                    font-size: 13px;
+                }
+            }
+        }
+    }
 }
 
-@media (max-width:767px){
+@media (max-width:768.5px){
     .promo{
         header{
             .header__logo{
@@ -100,6 +133,54 @@
         .title_left{
             font-size: 24px;
         }
+    }
+
+    .carousel{
+        &__inner{
+            width: 500px;
+            margin: auto;
+            img{
+                width: 100%;
+            }
+        }
+        .slick-dots{
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            padding-left: 0;
+            list-style-type: none;
+            margin-top: 15px;
+            button{
+                background-color: transparent;
+                margin: 5px;
+                width: 12px;
+                height: 14px;
+                border-radius: 100%;
+                font-size: 0;
+                border: 1px solid gray;
+                
+            }
+            .slick-active{
+                button{
+                    background-color: $main_color;
+                }
+            }
+        }
+    }
+
+    .catalog{
+        &__tab{
+            width: 170px;
+            height: 47px;
+        }
+    }
+
+    .reviews{
+       &__wrapper{
+        &_descr{
+            width: 420px;
+        }
+       }
     }
 }
 
@@ -161,6 +242,10 @@
             }
         }
     }
+
+    .title{
+        font-size: 23px;
+    }
     
     .consultation{
         padding-left: 2px;
@@ -188,6 +273,51 @@
             width: 70%;
             height: 44px;
             font-size: 13px;
+        }
+    }
+
+    .carousel{
+        &__inner{
+         width: 300px;
+         margin: auto;
+         img{
+             width: 100%;
+         }
+        }
+    }
+    
+    .catalog{
+        &__tab{
+            width: 92px;
+            height: 31px;
+            font-size: 9px;
+            line-height: 30px;
+        }
+
+        &-item{
+            width: 295px;
+            height: 438px;
+        }
+    }
+
+    .reviews{
+        &__wrapper{
+            &_item{
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+            }
+            &_descr{
+                width: 318px;
+            }
+            
+            &_headers{
+                margin-top: 5px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
         }
     }
 }
