@@ -1,8 +1,8 @@
 $(document).ready(function(){
     $('.carousel__inner').slick({
-        speed: 1300,
-        autoplay: true,
-        autoplaySpeed: 3000,
+        speed: 1000,
+        /* autoplay: false,
+        autoplaySpeed: 3000, */
         prevArrow: '<button type="button" class="slick-prev" ><img src="icons/left.png"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="icons/right.png"></button>',
         responsive: [
@@ -34,72 +34,4 @@ $(document).ready(function(){
 
     toggleSlide('.catalog-item__link');
     toggleSlide('.catalog-item__back');
-
-    //Modal
-    $('[data-modal=consultation]').on('click',function(){
-      $('.overlay,#consultation').fadeIn();
-    });
-
-    $('.modal__close').on('click',function(){
-      $('.overlay, #consultation, #thanks, #order').fadeOut();
-    });
-
-    $('.button__mini').each(function(i){
-      $(this).on('click', function(){
-        $('#order .modal__descr').text($('.catalog-item__subtitle').eq(i).text());
-        $('.overlay,#order').fadeIn();
-      })
-    });
-
-    function validateForms(form){
-      $(form).validate ({
-        rules: {
-          name: {
-            required: true,
-            minlength: 2
-          },
-          phone: "required",
-          email: {
-            required: true,
-            email: true
-          }
-        },
-        messages: {
-          name: {
-            required: "Пожалуйста, введите свое имя",
-            minlength: jQuery.validator.format("Введите {0} символа!")
-          },
-          phone: "Пожалуйста, введите свой номер телефона",
-          email: {
-            required: "Пожалуйста, введите свой почтовый адрес",
-            email: "Неправильно введён адрес почты"
-          }
-        }
-      });
-    };
-
-    validateForms('#consultation-form');
-    validateForms('#consultation form');
-    validateForms('#order form');
-
-    $('input[name=phone]').mask("+(999) 99 999 99 99");
-
-    $('form').submit(function(e) {
-      e.preventDefault();
-
-      if (!$(this).valid()) {
-        return;
-      }
-
-      $.ajax({
-        type: "POST",
-        URL:"mailer/smart.php",
-        data: $(this).serialize()
-      }).done(function() {
-        $(this).find("input").val("");
-
-        $('form').trigger('reset');
-      });
-      return false;
-    });
   });
