@@ -1,6 +1,11 @@
 .footer{
     height: 630px;
     position: relative;
+    margin: auto;
+    text-align: center;
+    &__map .ymaps-2-1-79-map{
+        width: 99%;
+    }
     &__info{
         padding: 50px 68px 60px;
         position: absolute;
@@ -38,6 +43,14 @@
         align-items: center;
         &-item{
             margin: 0 15px;
+            &:hover{
+               background-color:red;
+               border-radius: 100%;
+            }
+            &:active{
+                background-color:crimson;
+                border-radius: 100%;
+            }
         }
     }
 }
