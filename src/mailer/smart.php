@@ -14,8 +14,8 @@ $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.yandex.ru';  // Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
 $mail->Username = 'malishken@yandex.ru';                 // Наш логин
-$mail->Password = 'klkzfuilzofvnhxa';                          // Наш пароль от ящика
-$mail->SMTPSecure = 'ssl';                            // Enable TLS encryption, `ssl` also accepted
+$mail->Password = 'ayzeqaymwyohndke';                 // Наш пароль от ящика
+$mail->SMTPSecure = 'SSL';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 465;                                    // TCP port to connect to
  
 $mail->setFrom('malishken@yandex.ru', 'Pulse');   // От кого письмо 
